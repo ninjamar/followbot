@@ -1,6 +1,6 @@
 import requests,scratchapi,os,time
-s = scratchapi.ScratchUserSession('USERNAME',str(PASSWORD))
-project_id = str(PROJECTIDHERE)
+s = scratchapi.ScratchUserSession('USERNAME',str(PASSWORD)) #PUT STUFF HERE
+project_id = str(PROJECTIDHERE) #PUT STUFF HERE
 def users():
   #vname = f'☁ follow'
   text = requests.get(f'https://clouddata.scratch.mit.edu/logs?projectid={project_id}&limit=1000000000&offset=0').json()
